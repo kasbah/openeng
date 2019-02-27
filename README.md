@@ -2,6 +2,17 @@
 
 This library is to store some useful functions for creating high performance OpenSCAD models for purposes such as 3D printing scientific hardware.
 
+## Using this library
+
+### Copying directly into your project
+The library is very small and MIT licensed so that it is easy to provide a copy of this library with projects rather than requiring installation of the library separately.
+
+### Installing the library into OpenSCAD
+
+To install the library select `File -> Show Library Folder...` inside OpenSCAD. Copy the `OpenEng.scad` file into this folder. OpenEng should now be available from for any OpenScad file.
+
+
+# Functions and Modules
 
 ## Self-tappable holes
 

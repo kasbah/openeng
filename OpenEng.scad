@@ -1,3 +1,13 @@
+/*
+Code by 
+Julian Stirling and Richard Bowman
+Bath Open INstrumentation
+
+Licenced under MIT Licenced
+
+As this library is very small please feel free to copy it directly into other projects
+*/
+
 
 OE_splodge=.2;
 
