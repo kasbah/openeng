@@ -1,5 +1,5 @@
 
-OE_splodge=.25;
+OE_splodge=.2;
 
 // 75% tap diameter calculated for different screws
 function tap_d(screw_d=3,pitch=.5) = screw_d - pitch*sqrt(3)*.75*.75;
