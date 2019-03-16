@@ -1,6 +1,6 @@
 /*
 OpenEng
-v1.0
+v1.1
 
 Code by 
 Julian Stirling and Richard Bowman
@@ -12,6 +12,11 @@ As this library is very small please feel free to copy it directly into other pr
 Library home is: https://gitlab.com/bath_open_instrumentation_group/openeng
 */
 
+
+module reflect(axis){ //reflects its children about the origin, but keeps the originals
+    children();
+    mirror(axis) children();
+}
 
 OE_splodge=.2;
 
