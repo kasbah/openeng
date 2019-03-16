@@ -1,4 +1,7 @@
 /*
+OpenEng
+v1.0
+
 Code by 
 Julian Stirling and Richard Bowman
 Bath Open INstrumentation
@@ -6,6 +9,7 @@ Bath Open INstrumentation
 Licenced under MIT Licenced
 
 As this library is very small please feel free to copy it directly into other projects
+Library home is: https://gitlab.com/bath_open_instrumentation_group/openeng
 */
 
 
