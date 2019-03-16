@@ -14,6 +14,15 @@ To install the library select `File -> Show Library Folder...` inside OpenSCAD. 
 
 # Functions and Modules
 
+## Transforms
+
+* `reflect([x,y,z])` - Reflects child objects about axis defined by `[x,y,z]`, keeping original. Similar to mirror but original is kept.
+
+## 3D primitives
+
+* `filleted_cube([x,y,z]],r,xyonly,center)` - Filleted cube, with size set by `[x,y,z]` and fillet radius `r`. `xyonly` is a boolean [default: `true`] to fillet only the vertical walls by, set `xyonly` to `false` to fillet all sides. `center` acts the same as it would for a cube.
+
+
 ## Self-tappable holes
 
 Traditionally when making instrumentation normal machine screws are screwed into tapped holes which are cut with a tap. Taps are essentially very sharp and very hard screws with 3-4 channels scooped out along the length, this means any excess material that is cut away while tapping cancan escape through the channels. Another option is to use special self-tapping screws which look more like woodscrews.

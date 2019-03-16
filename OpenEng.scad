@@ -1,6 +1,6 @@
 /*
 OpenEng
-v1.1
+v1.1.1
 
 Code by 
 Julian Stirling and Richard Bowman
@@ -12,10 +12,34 @@ As this library is very small please feel free to copy it directly into other pr
 Library home is: https://gitlab.com/bath_open_instrumentation_group/openeng
 */
 
-
-module reflect(axis){ //reflects its children about the origin, but keeps the originals
+//reflects its children about the origin, but keeps the originals
+module reflect(axis)
+{
     children();
     mirror(axis) children();
+}
+
+
+//Filleted cube, with fillet radius r. Fillets are only on the vertical walls by default, set xyonly to false for all sides.
+module filleted_cube(size,r,xyonly=true,center=false)
+{
+    h=.0001;
+    xt= center? 0 : r;
+    yt= center? 0 : r;
+    zt= center? 0 : (xyonly? h/2 : r);
+    zd= xyonly? h : 2*r;
+    minkowski()
+    {
+        translate([xt,yt,zt])cube([size[0]-2*r, size[1]-2*r, size[2]-zd],center=center);
+			if(xyonly)
+        {
+            cylinder(h=h,r=r,center=true,$fn=20);
+        }
+        else
+        {
+            sphere(r,$fn=20);
+        }
+    }
 }
 
 OE_splodge=.2;
