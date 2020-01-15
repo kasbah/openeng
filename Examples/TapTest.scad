@@ -1,5 +1,5 @@
 
-include <OpenEng.scad>;
+include <../OpenEng.scad>;
 
 //Can change the splodge factor as OpenEng is inluded rather than used! 
 //is set once per file!!
